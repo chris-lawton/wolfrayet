@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Products from './components/Products';
-import Cart from './components/Cart';
-import Image from './images/wolf-rayet-logo.jpg'
+import Products from './Products';
+import Cart from './Cart';
 
-class App extends Component {
+class AllProducts extends Component {
   constructor() {
     super();
 
@@ -84,15 +83,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="header">
-          {!this.state.isCartOpen &&
-            <div className="App__view-cart-wrapper">
-              <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}>Cart</button>
-            </div>
-          }
-          <img className="header__logo" src={Image} alt=""/>
-        </header>
+      <div>
+        This is the all prods page
         <Products
           products={this.state.products}
           client={this.props.client}
@@ -106,8 +98,8 @@ class App extends Component {
           removeLineItemInCart={this.removeLineItemInCart}
         />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default AllProducts;
