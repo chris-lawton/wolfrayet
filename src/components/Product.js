@@ -49,7 +49,6 @@ class Product extends Component {
     let variantImage = this.state.selectedVariantImage || this.props.product.images[0]
     let variant = this.state.selectedVariant || this.props.product.variants[0]
     let variantQuantity = this.state.selectedVariantQuantity || 1
-    console.log(this.props);
     let variantSelectors = this.props.product.options.map((option) => {
       return (
         <VariantSelector

@@ -84,7 +84,6 @@ class AllProducts extends Component {
   render() {
     return (
       <div>
-        This is the all prods page
         <Products
           products={this.state.products}
           client={this.props.client}
