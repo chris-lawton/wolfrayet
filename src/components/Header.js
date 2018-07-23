@@ -95,9 +95,8 @@ class Header extends Component {
             <NavLink to="/">
               <img className="header__logo" src={Image} alt=""/>
             </NavLink>
-            <NavLink to="/products">
-              Products
-            </NavLink>
+            <NavLink to="/products">Products</NavLink>
+            <NavLink to="/about">About</NavLink>
           </header>
 
           <Cart
