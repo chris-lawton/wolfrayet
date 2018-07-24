@@ -14,6 +14,8 @@ body {
   font-family: 'Actor', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.4;
+  color: #545454;
 }
 
 img {
@@ -30,14 +32,26 @@ h1 {
 
 h2 {
   font-weight: 300;
-  margin: 0;
+  margin: 0 0 5px;
   font-size: 2rem;
+}
+
+p {
+  margin: 0 0 20px;
 }
 
 a {
   text-decoration: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 20px;
+  margin: 0 auto 20px;
+}
+
+/* Nav */
 .nav {
   border-bottom: 10px solid black;
   display: flex;
@@ -60,6 +74,32 @@ a {
 .nav a.active {
   background-color: black;
   color: white;
+}
+
+/* About */
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+@media (min-width: 600px) {
+  .about {
+    flex-direction: row;
+  }
+}
+
+.about__image {
+  max-width: 225px;
+  align-self: center;
+  margin-right: 30px;
+  order: 2;
+}
+
+@media (min-width: 600px) {
+  .about__image {
+    order: 0;
+  }
 }
 
 .App__customer-actions {
