@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Actor');
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -11,8 +11,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Actor', sans-serif;
   font-weight: 400;
+  font-size: 14px;
 }
 
 img {
@@ -33,9 +34,32 @@ h2 {
   font-size: 2rem;
 }
 
-.App__nav{
-  width: 100%;
-  list-style: none;
+a {
+  text-decoration: none;
+}
+
+.nav {
+  border-bottom: 10px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.nav a {
+  color: black;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  transition: background-color, color, 0.15s ease-in;
+}
+
+.nav a:focus,
+.nav a:hover {
+  background-color: #00000075;
+  color: white;
+}
+
+.nav a.active {
+  background-color: black;
+  color: white;
 }
 
 .App__customer-actions {
@@ -442,11 +466,7 @@ h2 {
   color: #c23628;
 }
 
-.header {
-  padding: 20px;
-}
-
 .header__logo {
   max-width: 160px;
-  margin: 0 auto;
+  margin: 20px auto 30px;
 }
