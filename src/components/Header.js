@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import Cart from './Cart';
 import Image from './../images/wolf-rayet-logo.jpg'
 
-
 class Header extends Component {
   constructor() {
       super();
@@ -93,7 +92,7 @@ class Header extends Component {
               </div>
             }
             <NavLink to="/">
-              <img className="header__logo" src={Image} alt=""/>
+              <img className="header__logo" src={Image} alt="Wolf Rayet Logo"/>
             </NavLink>
             <nav className="nav">
               <NavLink to="/products">Products</NavLink>
