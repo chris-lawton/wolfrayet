@@ -132,6 +132,7 @@ a {
 
 .stockists a {
   display: block;
+  border-bottom: 0;
 }
 
 /* Contact */

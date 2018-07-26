@@ -4,7 +4,7 @@ import Image from './../images/etsy.png'
 class Stockists extends Component {
   render() {
     return (
-      <div className="container container--narrow grid">
+      <div className="container container--narrow grid stockists">
         <div>
           <p>
             Kim West 47,<br />
