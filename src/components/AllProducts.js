@@ -10,7 +10,8 @@ class AllProducts extends Component {
       isCartOpen: false,
       checkout: { lineItems: [] },
       products: [],
-      shop: {}
+      shop: {},
+      isLoading: true,
     };
 
     this.handleCartClose = this.handleCartClose.bind(this);
@@ -29,6 +30,7 @@ class AllProducts extends Component {
     this.props.client.product.fetchAll().then((res) => {
       this.setState({
         products: res,
+        isLoading: false
       });
     });
 
@@ -82,6 +84,11 @@ class AllProducts extends Component {
   }
 
   render() {
+    if (this.state.isLoading) {
+      return (
+        <div className="loader" />
+      )
+    }
     return (
       <div>
         <Products
