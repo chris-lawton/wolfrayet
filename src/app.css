@@ -48,7 +48,11 @@ a {
   width: 100%;
   max-width: 1170px;
   padding: 0 20px;
-  margin: 0 auto 20px;
+  margin: 30px auto 20px;
+}
+
+.container--narrow {
+  max-width: 760px;
 }
 
 /* Nav */
@@ -60,9 +64,15 @@ a {
 
 .nav a {
   color: black;
-  padding: 10px 12px;
+  padding: 6px;
   text-transform: uppercase;
   transition: background-color, color, 0.15s ease-in;
+}
+
+@media (min-width: 600px) {
+  .nav a {
+    padding: 10px 12px;
+  }
 }
 
 .nav a:focus,
@@ -80,7 +90,6 @@ a {
 .about {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 @media (min-width: 600px) {
@@ -100,6 +109,26 @@ a {
   .about__image {
     order: 0;
   }
+}
+
+/* Stockists */
+.stockists {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .stockists {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.stockists__image {
+  max-width: 160px
+}
+
+.stockists a {
+  display: block;
 }
 
 .App__customer-actions {
