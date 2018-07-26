@@ -88,7 +88,7 @@ class Header extends Component {
           <header className="header">
             {!this.state.isCartOpen &&
               <div className="App__view-cart-wrapper">
-                <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}>Cart</button>
+                <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}>Basket</button>
               </div>
             }
             <NavLink to="/">
