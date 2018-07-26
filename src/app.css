@@ -570,7 +570,7 @@ a {
   border-radius: 50%;
   background: linear-gradient(to right, black 10%, rgba(255, 255, 255, 0) 42%);
   position: relative;
-  animation: spin 0.6s infinite linear;
+  animation: spin 0.4s infinite linear;
   transform: translateZ(0);
 }
 
