@@ -21,9 +21,14 @@ class AllProducts extends Component {
   }
 
   componentWillMount() {
+    const localStorageRef = localStorage.getItem('checkoutState');
     this.props.client.checkout.create().then((res) => {
+
+      // re-instate checkout state
+      let merged = {...res, ...JSON.parse(localStorageRef)};
+
       this.setState({
-        checkout: res,
+        checkout: merged,
       });
     });
 
@@ -39,6 +44,11 @@ class AllProducts extends Component {
         shop: res,
       });
     });
+  }
+
+  componentDidUpdate() {
+    // save checkout state
+    localStorage.setItem('checkoutState', JSON.stringify(this.state.checkout));
   }
 
   addVariantToCart(variantId, quantity){
