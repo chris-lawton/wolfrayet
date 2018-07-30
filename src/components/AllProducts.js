@@ -91,11 +91,18 @@ class AllProducts extends Component {
     }
     return (
       <div>
+        {!this.state.isCartOpen &&
+          <div className="App__view-cart-wrapper">
+            <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}>Basket</button>
+          </div>
+        }
+
         <Products
           products={this.state.products}
           client={this.props.client}
           addVariantToCart={this.addVariantToCart}
         />
+
         <Cart
           checkout={this.state.checkout}
           isCartOpen={this.state.isCartOpen}
