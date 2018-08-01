@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Actor');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -55,6 +57,25 @@ a {
 
 .container--narrow {
   max-width: 760px;
+}
+
+/* Home */
+.carousel-container .slick-prev {
+  left: 25px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
+.carousel-container .slick-next {
+  right: 25px;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-container .slick-prev:before,
+.carousel-container .slick-next:before {
+  font-size: 40px;
 }
 
 /* Nav */
