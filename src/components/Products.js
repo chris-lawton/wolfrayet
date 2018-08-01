@@ -15,7 +15,7 @@ class Products extends Component {
     });
 
     return (
-      <div className="Product-wrapper">
+      <div className="products container">
         {products}
       </div>
     );

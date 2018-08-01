@@ -14,7 +14,6 @@ import Slide11 from './../images/carousel/11.jpg';
 import Slide12 from './../images/carousel/12.jpg';
 
 class App extends Component {
-
   render() {
     var settings = {
       infinite: true,

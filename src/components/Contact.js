@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Facebook from './../images/facebook.png'
 import Twitter from './../images/twitter.png'
 import Pintrest from './../images/pintrest.png'
+
 class Contact extends Component {
   render() {
     return (

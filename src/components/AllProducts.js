@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Products from './Products';
 import Cart from './Cart';
+import BasketImage from './../images/basket.png'
 
 class AllProducts extends Component {
   constructor() {
@@ -103,7 +104,10 @@ class AllProducts extends Component {
       <div>
         {!this.state.isCartOpen &&
           <div className="App__view-cart-wrapper">
-            <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}>Basket</button>
+            <button className="app__view-cart" onClick={()=> this.setState({isCartOpen: true})}>
+              <img src={BasketImage} alt="Basket" />
+              Basket
+            </button>
           </div>
         }
 
