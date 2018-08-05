@@ -22,7 +22,12 @@ class Contact extends Component {
           </div>
         </div>
         <div>
-
+          <form className="form" name="wolf-rayet-contact" method="POST" netlify>
+            <input placeholder="Name" type="text" name="name" />
+            <input placeholder="Email" type="email" name="email" />
+            <textarea placeholder="Message" name="message"></textarea>
+            <button className="button" type="submit">Send</button>
+          </form>
         </div>
       </div>
     );

@@ -292,6 +292,22 @@ a {
   height: 30px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.form textarea {
+  min-height: 160px;
+}
+
 .App__customer-actions {
   float: left;
   padding: 10px;
