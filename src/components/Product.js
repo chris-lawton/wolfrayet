@@ -75,9 +75,9 @@ class Product extends Component {
           {this.props.product.title}
           <span className="Product__price">£{variant.price}</span>
         </h5>
-
+        <div className="product__description" dangerouslySetInnerHTML={{ __html: this.props.product.descriptionHtml }}></div>
         {variantSelectors}
-        <button className="Product__buy button" onClick={() => this.props.addVariantToCart(variant.id, variantQuantity)}>Add</button>
+        <button className="product__buy button" onClick={() => this.props.addVariantToCart(variant.id, variantQuantity)}>Add</button>
       </div>
     );
   }
