@@ -130,23 +130,44 @@ a {
 }
 
 /* Product */
-.product img {
+.product {
+  position: relative;
+}
+
+.product__image {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: top;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: 450px) {
-  .product img {
+  .product__image {
     height: 320px;
   }
 }
 
 @media (min-width: 768px) {
-  .product img {
+  .product__image {
     height: 460px;
   }
+}
+
+.product__image:first-child {
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.15s ease;
+}
+
+.product__image:first-child:hover {
+  opacity: 0;
+}
+
+.product__image--single:first-child:hover {
+  opacity: 1;
 }
 
 .Product__title {

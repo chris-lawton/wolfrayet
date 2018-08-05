@@ -46,7 +46,17 @@ class Product extends Component {
   }
 
   render() {
-    let variantImage = this.state.selectedVariantImage || this.props.product.images[0]
+    const images = this.props.product.images.map((image) => {
+      if(this.props.product.images.length > 1) {
+        return (
+          <img key={image.id} className="product__image" src={image.src} alt={`${this.props.product.title} product shot`} />
+        )
+      } else {
+        return (
+          <img key={image.id} className="product__image product__image--single" src={image.src} alt={`${this.props.product.title} product shot`} />
+        )
+      }
+    })
     let variant = this.state.selectedVariant || this.props.product.variants[0]
     let variantQuantity = this.state.selectedVariantQuantity || 1
     let variantSelectors = this.props.product.options.map((option) => {
@@ -60,7 +70,7 @@ class Product extends Component {
     });
     return (
       <div className="product">
-        {this.props.product.images.length ? <img src={variantImage.src} alt={`${this.props.product.title} product shot`}/> : null}
+        {images}
         <h5 className="Product__title">
           {this.props.product.title}
           <span className="Product__price">£{variant.price}</span>
