@@ -17,7 +17,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
-  color: #545454;
+  color: #1f191b;
 }
 
 img {
@@ -80,13 +80,13 @@ a {
 
 /* Nav */
 .nav {
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #1f191b;
   display: flex;
   justify-content: center;
 }
 
 .nav a {
-  color: black;
+  color: #1f191b;
   padding: 6px;
   text-transform: uppercase;
   transition: background-color, color, 0.15s ease-in;
@@ -106,7 +106,7 @@ a {
 }
 
 .nav a.active {
-  background-color: black;
+  background-color: #1f191b;
   color: white;
 }
 
@@ -301,7 +301,7 @@ a {
 .form textarea {
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid black;
+  border: 1px solid #1f191b;
 }
 
 .form textarea {
@@ -334,7 +334,7 @@ a {
 }
 
 .button {
-  background-color: #333333;
+  background-color: #1f191b;
   color: white;
   border: none;
   font-size: 1.2rem;
@@ -483,7 +483,7 @@ a {
 .pricing {
   margin-left: 5px;
   font-size: 16px;
-  color: black;
+  color: #1f191b;
 }
 
 /* LINE ITEMS
@@ -571,7 +571,7 @@ a {
 }
 
 .Line-item__quantity {
-  color: black;
+  color: #1f191b;
   width: 38px;
   height: 21px;
   line-height: 23px;
@@ -707,7 +707,7 @@ a {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: linear-gradient(to right, black 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #1f191b 10%, rgba(255, 255, 255, 0) 42%);
   position: relative;
   animation: spin 0.4s infinite linear;
   transform: translateZ(0);
