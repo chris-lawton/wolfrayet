@@ -26,8 +26,7 @@ class App extends Component {
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            infinite: true,
-            dots: true
+            infinite: true
           }
         },
         {
