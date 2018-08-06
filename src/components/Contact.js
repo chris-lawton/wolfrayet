@@ -22,11 +22,11 @@ class Contact extends Component {
           </div>
         </div>
         <div>
-          <form action="/" className="form" name="contact" method="POST" netlify>
-            <input placeholder="Name" type="text" name="name" />
-            <input placeholder="Email" type="email" name="email" />
-            <textarea placeholder="Message" name="message"></textarea>
-            <button className="button" type="submit">Send</button>
+          <form className="form" action="https://formspree.io/wolfrayetlondon@gmail.com" method="POST">
+            <input placeholder="Name" type="text" name="name" required />
+            <input placeholder="Email" type="email" name="_replyto" required />
+            <textarea placeholder="Message" name="message" required />
+            <button class="button" type="submit">Send</button>
           </form>
         </div>
       </div>
