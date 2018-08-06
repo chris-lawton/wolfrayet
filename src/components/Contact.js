@@ -26,7 +26,7 @@ class Contact extends Component {
             <input placeholder="Name" type="text" name="name" required />
             <input placeholder="Email" type="email" name="_replyto" required />
             <textarea placeholder="Message" name="message" required />
-            <button class="button" type="submit">Send</button>
+            <button className="button" type="submit">Send</button>
           </form>
         </div>
       </div>
