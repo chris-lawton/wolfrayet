@@ -173,10 +173,6 @@ a {
   opacity: 1;
 }
 
-.product__buy {
-  margin-top: auto;
-}
-
 .Product__title {
   font-size: 20px;
   margin: 10px 0 5px;
@@ -205,6 +201,7 @@ a {
 
 .select__wrapper {
   position: relative;
+  margin-top: auto;
 }
 
 .select__wrapper img {
