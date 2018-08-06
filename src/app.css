@@ -173,10 +173,6 @@ a {
   opacity: 1;
 }
 
-.product__description p:nth-last-child(-n+3) {
-  display: none;
-}
-
 .product__buy {
   margin-top: auto;
 }
