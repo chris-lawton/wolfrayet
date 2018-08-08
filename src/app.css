@@ -55,6 +55,10 @@ a {
   margin: 30px auto 20px;
 }
 
+.container--center {
+  text-align: center;
+}
+
 .container--narrow {
   max-width: 760px;
 }

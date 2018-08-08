@@ -8,6 +8,7 @@ import About from './About';
 import Stockists from './Stockists';
 import Contact from './Contact';
 import NotFound from './NotFound';
+import Thankyou from './Thankyou';
 
 const client = Client.buildClient({
   storefrontAccessToken: '1c6ad7f4426b3db3082ea4b9b3d5d0df',
@@ -24,6 +25,7 @@ const Main = () => (
                 <Route path='/about' component={About} />
                 <Route path='/stockists' component={Stockists} />
                 <Route path='/contact' component={Contact} />
+                <Route path='/thankyou' component={Thankyou} />
                 <Route component={NotFound} />
             </Switch>
         </div>
