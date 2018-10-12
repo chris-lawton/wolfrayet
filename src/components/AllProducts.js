@@ -33,7 +33,7 @@ class AllProducts extends Component {
       });
     });
 
-    this.props.client.product.fetchAll().then((res) => {
+    this.props.client.product.fetchAll(50).then((res) => {
       this.setState({
         products: res,
         isLoading: false
